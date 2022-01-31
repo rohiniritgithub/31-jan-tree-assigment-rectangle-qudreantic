@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+</head>
+<body>
+
+<canvas id="mycanvas" style="border:1px solid;" width="800px" height="500x" ></canvas>
+
+	<script type="text/javascript">
+		var c=document.getElementById("mycanvas");
+		var ctx=c.getContext("2d");
+
+		//red rectangle
+		ctx.beginPath();
+		ctx.lineWidth='6'; //size of
+		ctx.strokeStyle='red';
+		ctx.rect(20,20,500,300);
+		ctx.stroke();
+		ctx.fillStyle='lightblue'; //fill colour rectangle in lightblue
+		ctx.fill();
+
+
+		ctx.clearRect(45,45,80,60);
+		ctx.strokeRect(50,50,70,50);
+	
+
+	</script>
+
+
+</body>
+</html>
