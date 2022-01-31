@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<canvas id="mycanvas" style="border:1px solid ;" width="800px" height="400x" ></canvas>
+
+
+<script type="text/javascript">
+var c=document.getElementById("mycanvas");
+var ctx=c.getContext("2d");
+var grd=ctx.createLinearGradient(200,400,800,800);
+grd.addColorStop(0,'tomato');
+grd.addColorStop(1,'yellow');
+
+
+ctx.fillStyle=grd;
+ctx.fillRect(0,0,800,800);
+
+
+
+
+</script>
+
+</body>
+</html>
